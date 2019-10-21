@@ -28,9 +28,9 @@ public class Main {
                 System.out.println("Кот номер " + (i + 1) + " съел из общей миски " + cats[i].getAppetite() + " еды");
             } else {
                 bowlForAll.fillWithFood();
+                System.out.println("Недостаточно еды коту номер " + (i + 1) + ". Засыпаем миску кормом доверху..");
                 bowlForAll.eat(cats[i].getAppetite());
                 System.out.println("Кот номер " + (i + 1) + " съел из общей миски " + cats[i].getAppetite() + " еды");
-                System.out.println("Недостаточно еды коту номер " + (i + 1) + ". Засыпаем миску кормом доверху..");
             }
         }
         if (bowlForAll.getFoodLeft() > 0) {
